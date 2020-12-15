@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="chartView">
+        <!-- xy坐标轴颜色 -->
+        <attr name="xylinecolor" format="color" />
+        <!-- xy坐标轴宽度 -->
+        <attr name="xylinewidth" format="dimension" />
+        <!-- xy坐标轴文字颜色 -->
+        <attr name="xytextcolor" format="color" />
+        <!-- xy坐标轴文字大小 -->
+        <attr name="xytextsize" format="dimension" />
+        <!-- 折线图中折线的颜色 -->
+        <attr name="linecolor" format="color" />
+        <!-- x轴各个坐标点水平间距 -->
+        <attr name="interval" format="dimension" />
+        <!-- 背景颜色 -->
+        <attr name="bgcolor" format="color" />
+        <!--是否在ACTION_UP时，根据速度进行自滑动，建议关闭，过于占用GPU-->
+        <attr name="isScroll" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SoulPlanetsView">
+        <attr name="autoScrollMode">
+            <enum name="disable" value="0" />
+            <enum name="decelerate" value="1" />
+            <enum name="uniform" value="2" />
+        </attr>
+        <attr name="manualScroll" format="boolean" />
+        <attr name="radiusPercent" format="float" />
+        <attr name="scrollSpeed" format="float" />
+        <attr name="lightColor" format="color" />
+        <attr name="darkColor" format="color" />
+        <attr name="startAngleX" format="float" />
+        <attr name="startAngleY" format="float" />
+    </declare-styleable>
+</resources>
